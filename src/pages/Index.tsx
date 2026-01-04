@@ -133,7 +133,7 @@ const Index = () => {
                 15+ лет опыта
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Мария Петровна <span className="gradient-text">Иванова</span>
+                Чернова Ирина <span className="gradient-text">Игоревна</span>
               </h1>
               <p className="text-xl text-gray-600">
                 Учитель русского языка и литературы высшей категории. Помогаю ученикам открыть красоту
@@ -161,7 +161,7 @@ const Index = () => {
               <div className="absolute inset-0 gradient-bg rounded-3xl blur-3xl opacity-30"></div>
               <img
                 src="https://cdn.poehali.dev/projects/519ab65c-9338-4b1e-9d43-71a6c5b472b0/files/3b3cd897-4d84-47c6-a78f-8a18a856585a.jpg"
-                alt="Мария Петровна Иванова"
+                alt="Чернова Ирина Игоревна"
                 className="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -404,7 +404,7 @@ const Index = () => {
 
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4 gradient-text">Мария Петровна Иванова</h3>
+          <h3 className="text-2xl font-bold mb-4 gradient-text">Чернова Ирина Игоревна</h3>
           <p className="text-gray-400 mb-6">
             Учитель русского языка и литературы высшей категории
           </p>
