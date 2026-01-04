@@ -64,10 +64,14 @@ const Index = () => {
       color: 'bg-purple-500',
     },
     {
-      title: 'Публикации учеников',
-      description: 'Более 30 работ опубликованы в литературных журналах',
+      title: 'Публикации учителя',
+      description: 'Мои авторские стихи публикуются на литературных порталах',
       icon: 'BookOpen',
       color: 'bg-blue-500',
+      links: [
+        { url: 'https://www.chitalnya.ru/users/chernovai1/', label: 'Читальня' },
+        { url: 'https://stihi.ru/avtor/chernovai1', label: 'Стихи.ру' },
+      ],
     },
     {
       title: 'Авторские методики',
@@ -262,6 +266,22 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">{item.description}</p>
+                  {item.links && (
+                    <div className="mt-4 space-y-2">
+                      {item.links.map((link) => (
+                        <a
+                          key={link.url}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-primary hover:underline"
+                        >
+                          <Icon name="ExternalLink" size={16} />
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -326,8 +346,8 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Телефон</p>
-                    <a href="tel:+79161234567" className="text-lg font-semibold hover:text-primary">
-                      +7 (916) 123-45-67
+                    <a href="tel:+79177557224" className="text-lg font-semibold hover:text-primary">
+                      +7 (917) 755-72-24
                     </a>
                   </div>
                 </div>
@@ -338,10 +358,10 @@ const Index = () => {
                   <div>
                     <p className="text-sm text-gray-600">Email</p>
                     <a
-                      href="mailto:maria.ivanova@mail.ru"
+                      href="mailto:chernovai424@gmail.com"
                       className="text-lg font-semibold hover:text-primary"
                     >
-                      maria.ivanova@mail.ru
+                      chernovai424@gmail.com
                     </a>
                   </div>
                 </div>
@@ -410,14 +430,14 @@ const Index = () => {
           </p>
           <div className="flex justify-center gap-6 mb-6">
             <a
-              href="tel:+79161234567"
+              href="tel:+79177557224"
               className="hover:text-primary transition-colors"
               aria-label="Позвонить"
             >
               <Icon name="Phone" size={24} />
             </a>
             <a
-              href="mailto:maria.ivanova@mail.ru"
+              href="mailto:chernovai424@gmail.com"
               className="hover:text-primary transition-colors"
               aria-label="Написать email"
             >
