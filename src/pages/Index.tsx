@@ -52,18 +52,6 @@ const Index = () => {
 
   const portfolio = [
     {
-      title: 'Победители олимпиад',
-      description: '15 учеников стали призёрами всероссийских олимпиад по литературе',
-      icon: 'Trophy',
-      color: 'bg-yellow-500',
-    },
-    {
-      title: 'Высокие баллы ЕГЭ',
-      description: 'Средний балл моих учеников - 92, 8 учеников получили 100 баллов',
-      icon: 'Award',
-      color: 'bg-purple-500',
-    },
-    {
       title: 'Публикации учителя',
       description: 'Мои авторские стихи публикуются на литературных порталах',
       icon: 'BookOpen',
@@ -134,13 +122,13 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-slide-up">
               <Badge className="gradient-bg text-white text-lg px-6 py-2">
-                15+ лет опыта
+                Молодой специалист
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                 Чернова Ирина <span className="gradient-text">Игоревна</span>
               </h1>
               <p className="text-xl text-gray-600">
-                Учитель русского языка и литературы высшей категории. Помогаю ученикам открыть красоту
+                Учитель русского языка и литературы. Помогаю ученикам открыть красоту
                 слова и достичь высоких результатов.
               </p>
               <div className="flex gap-4">
@@ -249,7 +237,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold gradient-text mb-4">Портфолио</h2>
             <p className="text-xl text-gray-600">Достижения моих учеников – моя гордость</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {portfolio.map((item, index) => (
               <Card
                 key={item.title}
@@ -369,7 +357,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Адрес</p>
-                    <p className="text-lg font-semibold">Москва, Центральный район</p>
+                    <p className="text-lg font-semibold">г. Ишимбай, ул. Мичурина, д. 4</p>
                   </div>
                 </div>
               </CardContent>
@@ -424,7 +412,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <h3 className="text-2xl font-bold mb-4 gradient-text">Чернова Ирина Игоревна</h3>
           <p className="text-gray-400 mb-6">
-            Учитель русского языка и литературы высшей категории
+            Учитель русского языка и литературы
           </p>
           <div className="flex justify-center gap-6 mb-6">
             <a
